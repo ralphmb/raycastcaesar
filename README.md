@@ -19,10 +19,12 @@ While useless for serious cryptography, ROT13 is useful for (e.g.) discussing fi
 ## Details and Howto
 This implementation is case-sensitive and does not transform non-Latin characters, or symbols. Numbers are optionally encoded using ROT5, n-> n+5 mod10.
 
-To install, clone this repository or otherwise download its contents to a directory of your choosing. After that, open Raycast and hit Enter+, to access the settings. Under "Extensions", hit the "+" icon, and select "Add Script Directory". Select the directory where this extension is stored, and you should be good to go.
+To install, clone this repository or otherwise download its contents to a directory of your choosing. After that, open Raycast and hit Enter+, to access the settings. Under "Extensions", hit the "+" icon, and select "Add Script Directory". Select the directory where this extension is downloaded, and you should be good to go. I might send a pull request to get this included in the Raycast official extensions if anyone wants.
 
 To use, start typing "CaesarCipher" into Raycast and hit Enter. Type or paste the text you want to encode in the topmost text area. If you want a custom shift amount, enter this in the next box down. Un-parse-able entries here will instead use the default value of 13. Hit Shift+Enter to view the ciphertext and optionally copy it to your clipboard using Enter.
 
 ## Todo
 - [ ] Add a notification if parsing was unsuccessful?
 - [ ] Add options regarding case-sensitivity?
+- [ ] Add method whereby encrypting with key k and decrypting with key 26-k becomes easy.
+- [ ] Generalise to include Vigenere ciphers?
