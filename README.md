@@ -10,7 +10,7 @@ By default, numbers are left unchanged. An optional checkbox can be ticked which
 
 
 ## Why is 13 the default shift length?
-A Caesar cipher with a shift of 13 is also known as ROT13. As the alphabet is 2*13 = 26 letters long, this special case is known as an _involution_ or _reciprocal cipher_: the same process can be used to encrypt text as well as decrypt ciphertext. This means  "Hello World" is encrypted as "Uryyb Jbeyq", and "Uryyb Jbeyq" is encrypted as "Hello World".
+A Caesar cipher with a shift of 13 is also known as ROT13. As the alphabet is 2\*13 = 26 letters long, this special case is known as an _involution_ or _reciprocal cipher_: the same process can be used to encrypt text as well as decrypt ciphertext. This means  "Hello World" is encrypted as "Uryyb Jbeyq", and "Uryyb Jbeyq" is encrypted as "Hello World".
 (The Enigma machine used by the Axis powers in WWII was another example of a reciprocal cipher, though that was much more complex.)
 
 While useless for serious cryptography, ROT13 is useful for (e.g.) discussing film spoilers in a public forum, where willing participants can easily en-/decode the messages without spoiling the film for other people around.
