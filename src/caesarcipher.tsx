@@ -34,6 +34,7 @@ function caesar(s: string, shift: number, number_transform: boolean): string {
 type Values = {
   textarea: string;
   caesarshift: string;
+  decryptmode: boolean;
   numtransform: boolean;
 };
 
@@ -45,6 +46,9 @@ export default function Command() {
       // Maybe a better default should be given in the case where a user's input isn't a valid int
       // Add a seperate alert maybe? a text warning when this occurs?
       shift = 13;
+    }
+    if (values.decryptmode) {
+      shift = 26 - shift;
     }
     ciphertext = caesar(values.textarea, shift, values.numtransform);
 
@@ -81,6 +85,7 @@ export default function Command() {
       <Form.Separator />
       <Form.Description text="Options:" />
       <Form.Checkbox id="numtransform" label="Transform numbers too? (n -> n+5 mod 10)" storeValue />
+      <Form.Checkbox id="decryptmode" label="Decryption mode? (Reverses transformation)" storeValue />
     </Form>
   );
 }
