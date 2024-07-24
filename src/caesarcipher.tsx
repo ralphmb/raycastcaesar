@@ -1,7 +1,3 @@
-// TODO
-// Set up as Cyberchef extension?
-//
-
 import { Form, ActionPanel, Action, Clipboard, confirmAlert, Alert } from "@raycast/api";
 
 // Function for general Caesar ciphers.
@@ -84,8 +80,8 @@ export default function Command() {
       <Form.Description text="Non-integer entries will be replaced with the value 13." />
       <Form.Separator />
       <Form.Description text="Options:" />
-      <Form.Checkbox id="numtransform" label="Transform numbers too? (n -> n+5 mod 10)" storeValue />
-      <Form.Checkbox id="decryptmode" label="Decryption mode? (Reverses transformation)" storeValue />
+      <Form.Checkbox id="numtransform" label="Transform numbers too? (n -> n+5 mod 10)" />
+      <Form.Checkbox id="decryptmode" label="Decryption mode? (Reverses transformation)" />
     </Form>
   );
 }
