@@ -1,6 +1,8 @@
 # Raycast Caesar ciphers
 A simple implementation of the Caesar cipher, as an easy-to-use extension for Raycast.
 
+![Screenshot of extension](./demo.png?raw=true "Screenshot of extension")
+
 ## What is a Caesar cipher?
 The Caesar cipher takes a string, splits it into letters, and moves those letters k places forward in the alphabet, wrapping around if needed.
 
